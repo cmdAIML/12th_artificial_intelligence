@@ -1,1 +1,86 @@
+===========================================
+Class 12 Artificial Intelligence
+Unit 1: Python Programming-II
 
+Python Installation & Required Libraries
+===========================================
+
+Step 1: Download Python
+
+Visit:
+https://www.python.org/downloads/
+
+Download the latest stable version of Python.
+
+✔ During installation, check:
+[✓] Add Python to PATH
+
+Click "Install Now".
+
+-------------------------------------------
+
+Step 2: Verify Installation
+
+Open Command Prompt and run:
+
+python --version
+
+or
+
+python3 --version
+
+You should see the installed Python version.
+
+-------------------------------------------
+
+Step 3: Upgrade pip
+
+pip install --upgrade pip
+
+-------------------------------------------
+
+Step 4: Install Required Libraries
+
+pip install numpy
+
+pip install pandas
+
+pip install matplotlib
+
+-------------------------------------------
+
+Step 5: Verify Installation
+
+Open Python and run:
+
+import numpy
+import pandas
+import matplotlib
+
+If no errors appear, the libraries are installed correctly.
+
+-------------------------------------------
+
+Recommended Software
+
+• Visual Studio Code
+• Jupyter Notebook (optional)
+
+Install VS Code:
+https://code.visualstudio.com/
+
+Python Extension:
+https://marketplace.visualstudio.com/items?itemName=ms-python.python
+
+-------------------------------------------
+
+Libraries Used in Unit 1
+
+1. NumPy
+2. Pandas
+3. Matplotlib
+
+-------------------------------------------
+
+Author:
+Aditya Suke
