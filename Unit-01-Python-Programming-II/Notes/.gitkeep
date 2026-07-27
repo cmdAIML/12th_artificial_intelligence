@@ -1,1 +1,736 @@
+=====================================================================
+             UNIT 01 : PYTHON PROGRAMMING - II
+                Complete Notes (Class XII AI)
+=====================================================================
 
+Name : Unit-01 Python Programming-II
+
+---------------------------------------------------------------------
+PYTHON INSTALLATION
+---------------------------------------------------------------------
+
+Step 1:
+
+Press Windows + R
+
+Type:
+
+cmd
+
+Press Enter.
+
+---------------------------------------------------------------------
+
+Step 2:
+
+Check whether Python is installed.
+
+Type:
+
+python --version
+
+If Python is installed correctly, you will see:
+
+Python 3.13.5
+
+or
+
+Python 3.10.0
+
+---------------------------------------------------------------------
+
+How to Check if Python is Added to PATH
+
+Open Command Prompt.
+
+Type:
+
+python --version
+
+Then type:
+
+where python
+
+If Python is added to PATH, its installation location will be displayed.
+
+Example:
+
+C:\Program Files\Python313\python.exe
+
+---------------------------------------------------------------------
+PYTHON LIBRARIES INSTALLATION
+---------------------------------------------------------------------
+
+Step 1:
+
+Open the GitHub Repository.
+
+Example:
+
+https://github.com/cmdAIML/12th_artificial_intelligence
+
+---------------------------------------------------------------------
+
+Step 2:
+
+Download the Repository.
+
+1. Click the green Code button.
+
+2. Click Download ZIP.
+
+---------------------------------------------------------------------
+
+Step 3:
+
+Extract the ZIP file.
+
+---------------------------------------------------------------------
+
+Step 4:
+
+Open the extracted folder.
+
+---------------------------------------------------------------------
+
+Step 5:
+
+Double-click
+
+install_libraries.bat
+
+---------------------------------------------------------------------
+
+Step 6:
+
+Wait while Python installs all required libraries.
+
+---------------------------------------------------------------------
+
+Step 7:
+
+After installation you will see:
+
+==================================================
+Installation Completed Successfully!
+==================================================
+
+Press any key to continue...
+
+---------------------------------------------------------------------
+
+Step 8:
+
+Verify Installation
+
+Open Command Prompt.
+
+Type:
+
+python
+
+Then type:
+
+import numpy
+
+import pandas
+
+import matplotlib
+
+If no error appears, all libraries are installed successfully.
+
+Exit Python by typing:
+
+exit()
+
+---------------------------------------------------------------------
+IF PYTHON IS NOT INSTALLED
+---------------------------------------------------------------------
+
+The installer will display:
+
+Python is NOT installed or not added to PATH.
+
+Please install Python from:
+
+https://www.python.org/downloads/
+
+During installation select:
+
+☑ Add python.exe to PATH
+
+Complete the installation.
+
+Run install_libraries.bat again.
+
+---------------------------------------------------------------------
+CHECK INSTALLED LIBRARIES
+---------------------------------------------------------------------
+
+Open Command Prompt.
+
+Type:
+
+pip list
+
+A list of all installed Python libraries will be displayed.
+
+---------------------------------------------------------------------
+VS CODE RUN BUTTON
+---------------------------------------------------------------------
+
+Install the Python extension in VS Code.
+
+Open any Python (.py) file.
+
+The Run ▶ button will appear in the top-right corner.
+
+---------------------------------------------------------------------
+UNIT 1
+PYTHON PROGRAMMING-II
+---------------------------------------------------------------------
+
+WHAT IS A LIBRARY?
+
+Definition:
+
+A Python Library is a collection of pre-written code
+(functions, classes and modules) that helps programmers
+perform tasks without writing everything from scratch.
+
+OR
+
+A library is a collection of ready-made programs and
+functions that make coding easier and faster.
+
+---------------------------------------------------------------------
+WHY DO WE USE LIBRARIES?
+---------------------------------------------------------------------
+
+Suppose you want to calculate the average marks
+of 10,000 students.
+
+Without a library, you would have to write a lot of code.
+
+Using a library like NumPy, you can calculate
+the average using only one function.
+
+Libraries save:
+
+• Time
+• Effort
+• Memory
+
+---------------------------------------------------------------------
+EXAMPLE WITHOUT LIBRARY
+---------------------------------------------------------------------
+
+Suppose you want to add:
+
+10 + 20 + 30 + 40 + 50
+
+You have to write the logic yourself.
+
+If there are 10,000 numbers,
+the program becomes difficult.
+
+---------------------------------------------------------------------
+EXAMPLE WITH LIBRARY
+---------------------------------------------------------------------
+
+import numpy as np
+
+numbers = [10,20,30,40,50]
+
+print(np.mean(numbers))
+
+Output:
+
+30.0
+
+Using only one function,
+NumPy calculates the average.
+
+---------------------------------------------------------------------
+INTRODUCTION TO NUMPY
+---------------------------------------------------------------------
+
+NumPy stands for
+
+Numerical Python
+
+It is a Python library used to work with
+
+• Numbers
+• Arrays
+• Mathematical Calculations
+
+NumPy performs calculations quickly and efficiently.
+
+---------------------------------------------------------------------
+IMPORTING NUMPY
+---------------------------------------------------------------------
+
+Syntax
+
+import numpy as np
+
+Explanation
+
+import  -> Import a library
+
+numpy   -> Library Name
+
+as      -> Alias keyword
+
+np      -> Short name of NumPy
+
+---------------------------------------------------------------------
+WHY DO WE USE NUMPY?
+---------------------------------------------------------------------
+
+• Performs calculations very fast.
+
+• Handles large amounts of data.
+
+• Provides many mathematical functions.
+
+• Used in Data Science.
+
+• Used in Artificial Intelligence.
+
+• Used in Machine Learning.
+
+---------------------------------------------------------------------
+ADVANTAGES OF NUMPY
+---------------------------------------------------------------------
+
+• Faster than Python Lists.
+
+• Uses less memory.
+
+• Easy mathematical calculations.
+
+• Easy to create arrays.
+
+• Widely used in AI and ML.
+
+---------------------------------------------------------------------
+WHAT IS AN ARRAY?
+---------------------------------------------------------------------
+
+Definition
+
+An array is a data structure that stores
+multiple values in a single variable.
+
+---------------------------------------------------------------------
+NUMPY ARRAY
+---------------------------------------------------------------------
+
+Definition
+
+A NumPy Array is a collection of multiple
+values stored in one variable.
+
+It is used to store and process
+numerical data efficiently.
+
+Compared with Python Lists:
+
+• Faster
+
+• Less Memory
+
+• More Mathematical Functions
+
+---------------------------------------------------------------------
+TYPES OF ARRAYS
+---------------------------------------------------------------------
+
+1. One Dimensional Array (1D)
+
+Example
+
+[10 20 30 40 50]
+
+Contains only one row.
+
+---------------------------------------------------------------------
+
+2. Two Dimensional Array (2D)
+
+Example
+
+[[10 20 30]
+ [40 50 60]]
+
+Contains rows and columns.
+
+=====================================================================
+END OF PART 1
+=====================================================================
+=====================================================================
+PART 2
+INDEXING, SLICING AND NUMPY OPERATIONS
+=====================================================================
+
+---------------------------------------------------------------------
+INDEXING & SLICING
+---------------------------------------------------------------------
+
+Topics
+
+• Positive Index
+
+• Negative Index
+
+• Array Slicing
+
+---------------------------------------------------------------------
+PROGRAM
+---------------------------------------------------------------------
+
+import numpy as np
+
+arr = np.array([10,20,30,40,50])
+
+print(arr[0])
+
+print(arr[-1])
+
+print(arr[1:4])
+
+---------------------------------------------------------------------
+OUTPUT
+---------------------------------------------------------------------
+
+10
+
+50
+
+[20 30 40]
+
+---------------------------------------------------------------------
+EXPLANATION
+---------------------------------------------------------------------
+
+arr[0]
+
+Returns the first element.
+
+Output
+
+10
+
+------------------------------------------------------------
+
+arr[-1]
+
+Returns the last element.
+
+Output
+
+50
+
+------------------------------------------------------------
+
+arr[1:4]
+
+Returns elements from index 1 to index 3.
+
+Output
+
+[20 30 40]
+
+---------------------------------------------------------------------
+INDEX POSITION
+---------------------------------------------------------------------
+
+Array
+
+[10   20   30   40   50]
+
+Positive Index
+
+ 0    1    2    3    4
+
+Negative Index
+
+-5   -4   -3   -2   -1
+
+---------------------------------------------------------------------
+MATHEMATICAL OPERATIONS
+---------------------------------------------------------------------
+
+NumPy performs mathematical operations on arrays very easily.
+
+The basic operations are
+
+• Addition
+
+• Subtraction
+
+• Multiplication
+
+• Division
+
+=====================================================================
+1. ADDITION
+=====================================================================
+
+Program
+
+import numpy as np
+
+a = np.array([1,2,3])
+
+b = np.array([4,5,6])
+
+print(a+b)
+
+Output
+
+[5 7 9]
+
+Explanation
+
+1 + 4 = 5
+
+2 + 5 = 7
+
+3 + 6 = 9
+
+Each element is added with the element at the same position.
+
+=====================================================================
+2. SUBTRACTION
+=====================================================================
+
+Program
+
+import numpy as np
+
+a = np.array([10,20,30])
+
+b = np.array([1,2,3])
+
+print(a-b)
+
+Output
+
+[ 9 18 27]
+
+Explanation
+
+10 - 1 = 9
+
+20 - 2 = 18
+
+30 - 3 = 27
+
+=====================================================================
+3. MULTIPLICATION
+=====================================================================
+
+Program
+
+import numpy as np
+
+a = np.array([1,2,3])
+
+b = np.array([4,5,6])
+
+print(a*b)
+
+Output
+
+[ 4 10 18]
+
+Explanation
+
+1 × 4 = 4
+
+2 × 5 = 10
+
+3 × 6 = 18
+
+=====================================================================
+4. DIVISION
+=====================================================================
+
+Program
+
+import numpy as np
+
+a = np.array([10,20,30])
+
+b = np.array([2,4,5])
+
+print(a/b)
+
+Output
+
+[5. 5. 6.]
+
+Explanation
+
+10 ÷ 2 = 5
+
+20 ÷ 4 = 5
+
+30 ÷ 5 = 6
+
+=====================================================================
+STATISTICAL FUNCTIONS
+=====================================================================
+
+Statistical functions are used to analyse numerical data.
+
+They help us find
+
+• Average
+
+• Middle Value
+
+• Largest Value
+
+• Smallest Value
+
+• Total
+
+• Standard Deviation
+
+=====================================================================
+1. mean()
+=====================================================================
+
+Definition
+
+mean() returns the average of all numbers.
+
+Program
+
+import numpy as np
+
+numbers = np.array([10,20,30,40])
+
+print(np.mean(numbers))
+
+Output
+
+25.0
+
+Explanation
+
+10 + 20 + 30 + 40 = 100
+
+100 ÷ 4 = 25
+
+Mean = 25
+
+=====================================================================
+2. median()
+=====================================================================
+
+Definition
+
+median() returns the middle value after arranging the numbers.
+
+Program
+
+import numpy as np
+
+numbers = np.array([10,20,30,40,50])
+
+print(np.median(numbers))
+
+Output
+
+30.0
+
+Explanation
+
+Numbers
+
+10 20 30 40 50
+
+Middle Value = 30
+
+=====================================================================
+3. max()
+=====================================================================
+
+Definition
+
+max() returns the largest value.
+
+Program
+
+import numpy as np
+
+numbers = np.array([10,20,30,40])
+
+print(np.max(numbers))
+
+Output
+
+40
+
+Explanation
+
+40 is the largest value.
+
+=====================================================================
+4. min()
+=====================================================================
+
+Definition
+
+min() returns the smallest value.
+
+Program
+
+import numpy as np
+
+numbers = np.array([10,20,30,40])
+
+print(np.min(numbers))
+
+Output
+
+10
+
+Explanation
+
+10 is the smallest value.
+
+=====================================================================
+5. sum()
+=====================================================================
+
+Definition
+
+sum() returns the total of all values.
+
+Program
+
+import numpy as np
+
+numbers = np.array([10,20,30,40])
+
+print(np.sum(numbers))
+
+Output
+
+100
+
+Explanation
+
+10 + 20 + 30 + 40 = 100
+
+Total = 100
+
+=====================================================================
+END OF PART 2
+=====================================================================
