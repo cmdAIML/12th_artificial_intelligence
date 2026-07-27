@@ -20,9 +20,9 @@ print("=" * 50)
 for lib in libraries:
     try:
         __import__(lib)
-        print(f"✅ {lib} : Installed")
+        print(f"[OK] {lib} : Installed")
     except ImportError:
-        print(f"❌ {lib} : NOT Installed")
+        print(f"[ERROR] {lib} : NOT Installed")
 
 print("=" * 50) 
 
