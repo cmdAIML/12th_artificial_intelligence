@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+seaborn
+openpyxl
+jupyter
+notebook
+plotly
+scipy
+opencv-python
+pillow
